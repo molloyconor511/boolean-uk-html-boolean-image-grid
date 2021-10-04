@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Template</title>
+</head>
+
+<body>
+    <header>
+        <img 
+             class="boolean-logo" 
+             src="data:image/jpg;base64,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" 
+             alt="boolean logo"
+             height="auto"
+             width="auto" />
+             
+    </header>
+
+    <main>
+        <section class="cards">
+            <div class="whole-card">
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                </div>
+                <div class="lower-card">
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://github.com/">
+                                <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/home">
+                                <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                </div>
+            
+            </div>
+            <div class="whole-card">
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                </div>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+                <div class="upper-card">
+                    <a href="https://boolean.co.uk/">
+                        <img class="card-logo" src="/logo.jpeg" alt="logo"/>
+                        <img class="laptop-img" src="/laptop.jpg" alt="laptop image"/>   
+                    </a>
+                    <div class="lower-card">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://github.com/">
+                                    <img class="github-icon" src="/GitHub-Mark.png" alt="github-link"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/home">
+                                    <img class="twitter-icon" src="/twitter-icon-vector-21082493.jpg" alt="twitter icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, temporibus saepe. Cumque reiciendis iste laboriosam suscipit. Odio consectetur doloribus tenetur iste consequatur tempora nulla! Recusandae voluptates rerum voluptas voluptatum expedita.</p>
+                    </div>
+                
+                </div>
+        </section>
+    </main>
+
+    <footer 
+        class="No-text"
+        height= "10%"
+        width= "100%">    
+    </footer>
+    
+</body>
+</html>
